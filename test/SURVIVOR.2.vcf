@@ -1,0 +1,49 @@
+##fileformat=VCFv4.2
+##fileDate=Tue Apr 10 11:56:30 2018##source=NaSV
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INS,Description="Insertion">
+##ALT=<ID=INV,Description="Invertion">
+##ALT=<ID=TRA,Description="Translocation">
+##ALT=<ID=BND,Description="Breakend">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variant">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="ID of event associated to breakend">
+##INFO=<ID=SVMETHOD,Number=1,Type=String,Description="Type of approach used to detect SV">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of structural variant">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval (95%) around POS">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval (95%) around END">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Distance between the two genomic positions">
+##INFO=<ID=INSLEN,Number=.,Type=Integer,Description="Insertion length">
+##INFO=<ID=STRANDS,Number=.,Type=String,Description="Strand orientation of the adjacency in BEDPE format (DEL:+-, DUP:-+, INV:++/--)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=SU,Number=2,Type=Integer,Description="Number of pieces of evidence supporting the variant">
+##FORMAT=<ID=SR,Number=2,Type=Integer,Description="Number of split reads supporting the variant">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT
+chr2	42411426	1_1	N	N]chr2:29892467]	.	.	SVTYPE=BND;EVENT=1;STRANDS=++;CHR2=chr2;END=29892467	GT:SU:SR	./.:3547:91
+chr2	29890021	1_2	N	[chr2:42413878[N	.	.	SVTYPE=BND;EVENT=1;STRANDS=--;CHR2=chr2;END=42413878	GT:SU:SR	./.:5064:91
+chr2	42427996	1_3	N	N]chr2:29629754]	.	.	SVTYPE=BND;EVENT=1;STRANDS=++;CHR2=chr2;END=29629754	GT:SU:SR	./.:5227:91
+chr2	29626781	1_4	N	[chr2:42430972[N	.	.	SVTYPE=BND;EVENT=1;STRANDS=--;CHR2=chr2;END=42430972	GT:SU:SR	./.:3815:91
+chr2	29618606	2_1	N	<DEL>	.	.	SVTYPE=DEL;EVENT=2;CHR2=chr2;END=29618817;SVLEN=212	GT:SU:SR	./.:882:77
+chr2	29624297	2_2	N	<DEL>	.	.	SVTYPE=DEL;EVENT=2;CHR2=chr2;END=29624333;SVLEN=37	GT:SU:SR	./.:999:77
+chr2	29626778	2_3	N	N]chr2:42430969]	.	.	SVTYPE=BND;EVENT=2;STRANDS=++;CHR2=chr2;END=42430969	GT:SU:SR	./.:907:77
+chr2	42427997	2_4	N	[chr2:29629755[N	.	.	SVTYPE=BND;EVENT=2;STRANDS=--;CHR2=chr2;END=29629755	GT:SU:SR	./.:800:77
+chr2	42550829	3_1	N	<INV>	.	.	SVTYPE=INV;EVENT=3;CHR2=chr2;END=42551540;SVLEN=711	GT:SU:SR	./.:2701:188
+chr2	42557841	3_2	N	N]chr2:42558510]	.	.	SVTYPE=BND;EVENT=3;STRANDS=++;CHR2=chr2;END=42558510	GT:SU:SR	./.:2270:188
+chr2	42557842	3_3	N	[chr2:42557842[N	.	.	SVTYPE=BND;EVENT=3;STRANDS=--;CHR2=chr2;END=42557842	GT:SU:SR	./.:1054:188
+chr2	29580153	4_1	N	N]chr2:29580842]	.	.	SVTYPE=BND;EVENT=4;STRANDS=++;CHR2=chr2;END=29580842	GT:SU:SR	./.:711:25
+chr2	29580230	4_2	N	[chr2:29580922[N	.	.	SVTYPE=BND;EVENT=4;STRANDS=--;CHR2=chr2;END=29580922	GT:SU:SR	./.:982:25
+chr2	29597745	4_3	N	N]chr2:29598375]	.	.	SVTYPE=BND;EVENT=4;STRANDS=++;CHR2=chr2;END=29598375	GT:SU:SR	./.:950:25
+chr2	29597815	4_4	N	[chr2:29598445[N	.	.	SVTYPE=BND;EVENT=4;STRANDS=--;CHR2=chr2;END=29598445	GT:SU:SR	./.:646:25
+chr2	42512660	5_1	N	N]chr2:42513458]	.	.	SVTYPE=BND;EVENT=5;STRANDS=++;CHR2=chr2;END=42513458	GT:SU:SR	./.:3482:7
+chr2	42512663	5_2	N	[chr2:42512663[N	.	.	SVTYPE=BND;EVENT=5;STRANDS=--;CHR2=chr2;END=42512663	GT:SU:SR	./.:3472:7
+chr2	42550830	5_3	N	<INV>	.	.	SVTYPE=INV;EVENT=5;CHR2=chr2;END=42551538;SVLEN=708	GT:SU:SR	./.:1629:7
+chr2	29597745	6_1	N	N]chr2:29598374]	.	.	SVTYPE=BND;EVENT=6;STRANDS=++;CHR2=chr2;END=29598374	GT:SU:SR	./.:7:7
+chr2	29597815	6_2	N	[chr2:29598445[N	.	.	SVTYPE=BND;EVENT=6;STRANDS=--;CHR2=chr2;END=29598445	GT:SU:SR	./.:7:7
+chr2	29618608	6_3	N	<DEL>	.	.	SVTYPE=DEL;EVENT=6;CHR2=chr2;END=29618816;SVLEN=209	GT:SU:SR	./.:7:7
+chr2	29890018	7_1	N	N]chr2:42413875]	.	.	SVTYPE=BND;EVENT=7;STRANDS=++;CHR2=chr2;END=42413875	GT:SU:SR	./.:799:415
+chr2	42411429	7_2	N	[chr2:29892470[N	.	.	SVTYPE=BND;EVENT=7;STRANDS=--;CHR2=chr2;END=29892470	GT:SU:SR	./.:794:415
+chr2	29527440	8_1	N	<INV>	.	.	SVTYPE=INV;EVENT=8;CHR2=chr2;END=29528113;SVLEN=673	GT:SU:SR	./.:712:606
+chr2	29503983	9_1	N	<DUP>	.	.	SVTYPE=DUP;EVENT=9;CHR2=chr2;END=29488152;SVLEN=15832	GT:SU:SR	./.:628:628
+chr2	29707764	10_1	N	<DUP>	.	.	SVTYPE=DUP;EVENT=10;CHR2=chr2;END=29695592;SVLEN=12173	GT:SU:SR	./.:672:672

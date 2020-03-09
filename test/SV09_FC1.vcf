@@ -1,0 +1,23 @@
+##fileformat=VCFv4.2
+##fileDate=Tue Apr 10 11:45:28 2018##source=NaSV
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INS,Description="Insertion">
+##ALT=<ID=INV,Description="Invertion">
+##ALT=<ID=TRA,Description="Translocation">
+##ALT=<ID=BND,Description="Breakend">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variant">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="ID of event associated to breakend">
+##INFO=<ID=SVMETHOD,Number=1,Type=String,Description="Type of approach used to detect SV">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of structural variant">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval (95%) around POS">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval (95%) around END">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Distance between the two genomic positions">
+##INFO=<ID=INSLEN,Number=.,Type=Integer,Description="Insertion length">
+##INFO=<ID=STRANDS,Number=.,Type=String,Description="Strand orientation of the adjacency in BEDPE format (DEL:+-, DUP:-+, INV:++/--)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=SU,Number=2,Type=Integer,Description="Number of pieces of evidence supporting the variant">
+##FORMAT=<ID=SR,Number=2,Type=Integer,Description="Number of split reads supporting the variant">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT
